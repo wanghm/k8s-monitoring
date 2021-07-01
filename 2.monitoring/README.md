@@ -134,15 +134,23 @@ metricsにcpuで検索し、cluster:node_cpu:sum_rate5m を選択
 ![grafana_dashboard_import_1.png](./images/grafana_dashboard_import_1.png)
 
 
-#### 2.  Import via grafana.comに 1621 を指定し、Loadをクリック
+#### 2.  Import via grafana.comに Dashboard ID を指定し、Loadをクリック
+
+インポート可能なDashbord：
+https://grafana.com/grafana/dashboards
 
 <img src=./images/grafana_dashboard_import_2.png width=640>
 
 #### 3. Prometheusの配下Prometheus data sourceを選択し、Importをクリック
 
-
 <img src=./images/grafana_dashboard_import_3.png width=640>
 
 以下のようなダッシュボードが表示されます。
 
+ID: 1621
+
 <img src=./images/grafana_dashboard_import_4.png width=640>
+
+ID: 1860
+
+<img src=./images/grafana_dashboard_import_5.png width=640>
