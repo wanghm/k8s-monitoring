@@ -8,12 +8,12 @@ PersistentVolumeはNutanix Volumeを利用しています。
 確認：
 ### Lens > Workloads > Pods, 「All Namespaces」を選択します
 
-<img src=./images/promethews.png width=512>
+<img src=./images/promethews.png width=640>
 
 ### prometheus-k8s-0 を選択
 
 ### Volumesの配下「persistentVolume Claim」を選択
-<img src=./images/promethews_pvc.png width=512>
+<img src=./images/promethews_pvc.png width=640>
 
 
 ### kubectlで確認
@@ -23,7 +23,7 @@ PersistentVolumeはNutanix Volumeを利用しています。
 ## 2. Grafana
 
 構成：
-<img src=./images/promethews_and_grafana.png width=512>
+<img src=./images/promethews_and_grafana.png width=640>
 
 ### ingress作成
 ```
@@ -66,19 +66,19 @@ kubectl -f ingress-grafana.yaml
 
 以下の画面が表示されます。
 
-<img src=./images/grafana_login.png width=512>
+<img src=./images/grafana_login.png width=640>
 
 
 初回ログイン：
 * Username - admin
 * Password - admin
 
-<img src=./images/grafana_change_password.png width=512>
+<img src=./images/grafana_change_password.png width=640>
 
 
 初期表示画面：
 
-<img src=./images/grafana_initial_dashboard.png width=512>
+<img src=./images/grafana_initial_dashboard.png width=640>
 
 ### Datasourceを設定
 
@@ -99,11 +99,11 @@ prometheus-operated           172.20.223.203:9090
 
 例： http://172.20.223.203:9090
 
-<img src=./images/grafana_add_ds_promethus_url.png width=512>
+<img src=./images/grafana_add_ds_promethus_url.png width=640>
 
 #### 4. Save & Test をクリック
 
-<img src=./images/grafana_add_ds_promethus_url_save.png width=512>
+<img src=./images/grafana_add_ds_promethus_url_save.png width=640>
 
 
 ### ダッシュボード作成
@@ -115,17 +115,17 @@ prometheus-operated           172.20.223.203:9090
 
 metricsにcpuで検索し、cluster:node_cpu:sum_rate5m を選択
 
-<img src=./images/grafana_dashboard_2.png width=512>
+<img src=./images/grafana_dashboard_2.png width=640>
 
 保存
 
-<img src=./images/grafana_dashboard_3.png width=512>
+<img src=./images/grafana_dashboard_3.png width=640>
 
 グラフ表示
 
-<img src=./images/grafana_dashboard_4.png width=512>
+<img src=./images/grafana_dashboard_4.png width=640>
 
-<img src=./images/grafana_dashboard_5.png width=512>
+<img src=./images/grafana_dashboard_5.png width=640>
 
 ### ダッシュボードのインポート
 
@@ -136,13 +136,13 @@ metricsにcpuで検索し、cluster:node_cpu:sum_rate5m を選択
 
 #### 2.  Import via grafana.comに 1621 を指定し、Loadをクリック
 
-<img src=./images/grafana_dashboard_import_2.png width=512>
+<img src=./images/grafana_dashboard_import_2.png width=640>
 
 #### 3. Prometheusの配下Prometheus data sourceを選択し、Importをクリック
 
 
-<img src=./images/grafana_dashboard_import_3.png width=512>
+<img src=./images/grafana_dashboard_import_3.png width=640>
 
 以下のようなダッシュボードが表示されます。
 
-<img src=./images/grafana_dashboard_import_4.png width=512>
+<img src=./images/grafana_dashboard_import_4.png width=640>
