@@ -1,5 +1,15 @@
 # Prometheus & Grafanaによる監視ダッシュボードの作成
 
+本Labの前提：　nginx ingress controller導入済み
+
+nginx ingress controllerのEXTERNAL-IPの確認方法
+```
+$ kubectl get svc -n ingress-nginx
+NAME                                 TYPE           CLUSTER-IP       EXTERNAL-IP    PORT(S)                      AGE
+ingress-nginx-controller             LoadBalancer   172.19.51.177    10.129.45.13   80:31546/TCP,443:31615/TCP   36h
+ingress-nginx-controller-admission   ClusterIP      172.19.215.144   <none>         443/TCP                      36h
+```
+
 ## 1. Promethus
 
 Karbonクラスタ作成時に自動的にPrometheusをインストールしました。
@@ -53,7 +63,7 @@ spec:
 sudo echo "<<ingress-nginx-controllerのEXTERNAL-IP>> grafana.local >> /etc/hosts"
 
 # Windows:
-Add-Content -Path C:\Windows\System32\drivers\etc\hosts -Value "<EXTERNAL-IP>`grafana.local" -Force
+Add-Content -Path C:\Windows\System32\drivers\etc\hosts -Value "<ingress-nginx-controllerのEXTERNAL-IP>`grafana.local" -Force
 cat C:\Windows\System32\drivers\etc\hosts
 ```
 ### Deploy
