@@ -99,3 +99,39 @@ prometheus-operated           172.20.223.203:9090
 #### 4. Save & Test をクリック
 
 ![grafana_add_ds_promethus_url_save.png](./images/grafana_add_ds_promethus_url_save.png)
+
+### ダッシュボード作成
+
+#### 1. Grafana画面からDashboard > Manageを選択
+![grafana_dashboard_1.png](./images/grafana_dashboard_1.png)
+
+#### 2. New Dashboard > + Add an empty panel をクリック
+
+metricsにcpuで検索し、cluster:node_cpu:sum_rate5m を選択
+![grafana_dashboard_2.png](./images/grafana_dashboard_2.png)
+
+保存
+![grafana_dashboard_3.png](./images/grafana_dashboard_3.png)
+
+グラフ表示
+![grafana_dashboard_4.png](./images/grafana_dashboard_4.png)
+
+![grafana_dashboard_5.png](./images/grafana_dashboard_5.png)
+
+### ダッシュボードのインポート
+
+#### 1.Select Dashboards > Manage from the left-hand toolbar and click Import.
+
+![grafana_dashboard_import_1.png](./images/grafana_dashboard_import_1.png)
+
+
+#### 2.  Import via grafana.comに 1621 を指定し、Loadをクリック
+
+![grafana_dashboard_import_2.png](./images/grafana_dashboard_import_2.png)
+
+#### 3. Under Prometheus, select your Prometheus data source and click Import.
+
+![grafana_dashboard_import_3.png](./images/grafana_dashboard_import_3.png)
+
+以下のようなダッシュボードが表示されます。
+![grafana_dashboard_import_4.png](./images/grafana_dashboard_import_4.png)
