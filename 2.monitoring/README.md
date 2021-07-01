@@ -65,6 +65,7 @@ kubectl -f ingress-grafana.yaml
 ブラウザでhttp://grafana.localにアクセス
 
 以下の画面が表示されます。
+
 <img src=./images/grafana_login.png width=512>
 
 
@@ -116,18 +117,19 @@ metricsにcpuで検索し、cluster:node_cpu:sum_rate5m を選択
 
 <img src=./images/grafana_dashboard_2.png width=512>
 
-
 保存
+
 <img src=./images/grafana_dashboard_3.png width=512>
 
 グラフ表示
+
 <img src=./images/grafana_dashboard_4.png width=512>
 
 <img src=./images/grafana_dashboard_5.png width=512>
 
 ### ダッシュボードのインポート
 
-#### 1.Select Dashboards > Manage from the left-hand toolbar and click Import.
+#### 1. Dashboards > Manage を選択してからImportをクリック
 
 ![grafana_dashboard_import_1.png](./images/grafana_dashboard_import_1.png)
 
@@ -136,7 +138,7 @@ metricsにcpuで検索し、cluster:node_cpu:sum_rate5m を選択
 
 <img src=./images/grafana_dashboard_import_2.png width=512>
 
-#### 3. Under Prometheus, select your Prometheus data source and click Import.
+#### 3. Prometheusの配下Prometheus data sourceを選択し、Importをクリック
 
 
 <img src=./images/grafana_dashboard_import_3.png width=512>
