@@ -91,15 +91,11 @@ prometheus-operated           172.20.223.203:9090
 
 ![grafana_add_ds_1.png](./images/grafana_add_ds_1.png)
 
-#### 3.「Add data source」をクリック
-
-![grafana_add_ds_2.png](./images/grafana_add_ds_2.png)
-
-#### 4. Prometheusを選択し、URLにPrometheus-operatedのEndpointを設定
+#### 3. Prometheusを選択し、URLにPrometheus-operatedのEndpointを設定
 
 例： http://172.20.223.203:9090
 
 ![grafana_add_ds_promethus_url.png](./images/grafana_add_ds_promethus_url.png)
-#### 5. Save & Test をクリック
+#### 4. Save & Test をクリック
 
 ![grafana_add_ds_promethus_url_save.png](./images/grafana_add_ds_promethus_url_save.png)
